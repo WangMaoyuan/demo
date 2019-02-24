@@ -41,3 +41,14 @@ Sac demo system.
 
    All front end static files will be built in /src/main/resources/static.
 
+> On Windows:
+  1. Run back end.
+  ```bash
+  mvnw spring-boot:run -DskipTests=true
+  ```
+
+  2. Run front end.
+  ```bash
+  cd src/main/client
+  npm run start
+  ```
