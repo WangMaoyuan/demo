@@ -1,4 +1,10 @@
-package com.example.demo.Controller;
+package cn.edu.sysu.sac.demo.Controller;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpSession;
 
 // import org.slf4j.Logger;
 // import org.slf4j.LoggerFactory;
@@ -8,18 +14,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Service.MemberService;
-import com.example.demo.Service.NetService;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpSession;
-
-import com.example.demo.Bean.DataException;
-import com.example.demo.Bean.ResBody;
-import com.example.demo.Model.MemberAccount;
+import cn.edu.sysu.sac.demo.Bean.DataException;
+import cn.edu.sysu.sac.demo.Bean.ResBody;
+import cn.edu.sysu.sac.demo.Model.MemberAccount;
+import cn.edu.sysu.sac.demo.Service.MemberService;
+import cn.edu.sysu.sac.demo.Service.NetService;
 
 @RestController
 @RequestMapping("/api/member")

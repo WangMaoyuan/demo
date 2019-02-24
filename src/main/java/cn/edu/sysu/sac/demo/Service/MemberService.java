@@ -1,15 +1,15 @@
-package com.example.demo.Service;
+package cn.edu.sysu.sac.demo.Service;
 
 import java.util.List;
-
-import com.example.demo.Bean.DataException;
-import com.example.demo.Dao.MemberDao;
-import com.example.demo.Model.MemberAccount;
 
 // import org.slf4j.Logger;
 // import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import cn.edu.sysu.sac.demo.Bean.DataException;
+import cn.edu.sysu.sac.demo.Dao.MemberDao;
+import cn.edu.sysu.sac.demo.Model.MemberAccount;
 
 @Service
 public class MemberService {

@@ -1,4 +1,4 @@
-package com.example.demo.Bean;
+package cn.edu.sysu.sac.demo.Bean;
 
 import java.util.List;
 import java.util.Map;

@@ -1,22 +1,17 @@
-package com.example.demo.Library.utils;
+package cn.edu.sysu.sac.demo.Library.utils;
 
 import java.io.File;
 import java.io.IOException;
 
-import com.example.demo.Library.utils.Interceptors.AuthInterceptor;
-import com.example.demo.Library.utils.Interceptors.LogInterceptor;
-
 import org.springframework.context.annotation.Configuration;
-// import org.springframework.core.Ordered;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-// import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-// import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
+import cn.edu.sysu.sac.demo.Library.utils.Interceptors.AuthInterceptor;
+import cn.edu.sysu.sac.demo.Library.utils.Interceptors.LogInterceptor;
+
 @Configuration
-@EnableWebMvc
 public class Configure extends WebMvcConfigurationSupport {
 
   @Override
@@ -33,20 +28,6 @@ public class Configure extends WebMvcConfigurationSupport {
 
   private static final String[] CLASSPATH_RESOURCE_LOCATIONS = { "classpath:/META_INF/resources/",
       "classpath:/resources/", "classpath:/static/", "classpath:/public/" };
-
-  // @Override
-  // public void addViewControllers(ViewControllerRegistry registry) {
-  //   registry.addViewController("/").setViewName("redirect:/index.html");
-  //   registry.addViewController("/error").setViewName("error.html");
-  //   registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
-  //   super.addViewControllers(registry);
-  // }
-
-  // @Override
-  // public void configurePathMatch(PathMatchConfigurer configurer) {
-  // super.configurePathMatch(configurer);
-  // configurer.setUseSuffixPatternMatch(false);
-  // }
 
   @Override
   public void addResourceHandlers(ResourceHandlerRegistry registry) {

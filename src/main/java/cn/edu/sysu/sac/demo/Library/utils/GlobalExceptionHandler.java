@@ -1,15 +1,15 @@
-package com.example.demo.Library.utils;
+package cn.edu.sysu.sac.demo.Library.utils;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
-
-import com.example.demo.Bean.ResBody;
-import com.example.demo.Service.NetService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import cn.edu.sysu.sac.demo.Bean.ResBody;
+import cn.edu.sysu.sac.demo.Service.NetService;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {

@@ -1,4 +1,4 @@
-package com.example.demo.Bean;
+package cn.edu.sysu.sac.demo.Bean;
 
 public class DataException extends Exception {
 
