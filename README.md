@@ -25,5 +25,5 @@ Sac demo system.
    npm run build
    ```
 
-   All front end static files will be built in /src/resources/static.
+   All front end static files will be built in /src/main/resources/static.
 
