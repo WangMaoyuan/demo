@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ResBody {
   public int code;
-  public String description;
+  public String error;
   public List<Map<String, String>> payload;
 
   public int getCode() {
@@ -19,10 +19,10 @@ public class ResBody {
   }
 
   public String getDescription() {
-    return description;
+    return error;
   }
-  public void setDescription(String description) {
-    this.description = description;
+  public void setError(String error) {
+    this.error = error;
   }
 
   public List<Map<String, String>> getPayload() {

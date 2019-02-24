@@ -50,19 +50,18 @@ public class NetService {
     return resBody;
   }
 
-  public ResBody resFail (String description) {
+  public ResBody resFail (String error) {
     ResBody resBody = new ResBody();
     resBody.setCode(400);
-    resBody.setDescription(description);
-    logger.warn(description);
+    resBody.setError(error);
+    logger.warn(error);
     return resBody;
   }
 
-  public ResBody resError (String description) {
+  public ResBody resError (String error) {
     ResBody resBody = new ResBody();
-    resBody.setCode(500);
-    resBody.setDescription(description);
-    logger.error(description);
+    resBody.setError(error);
+    logger.error(error);
     return resBody;
   }
 }
